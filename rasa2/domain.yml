@@ -1,0 +1,111 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - give_link
+  - go_ce_dept
+  - go_it_dept
+  - go_entc_dept
+  - go_aca_cal
+  - vision_mission
+  - see_history
+  - director_msg
+  - principal_msg
+  - admin_contact
+  - contact_us
+  - first_year_fe_be
+  - first_year_be_me
+  - fee_structure
+  - cut_off_fe
+  - cut_off_se_direct
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_link:
+  - text: "Here is the link : https://pict.edu/"
+
+  utter_ce_dept:
+  - text: "Click on the Following Link: https://pict.edu/CE-dept/"
+
+  utter_it_dept:
+  - text: "Click on the Following Link: https://pict.edu/IT-dept/"
+
+  utter_entc_dept:
+  - text: "Click on the Following Link: https://pict.edu/ENTC-dept/"
+
+  utter_aca_cal:
+  - text: "Click on the Following Link:"
+    image: "https://bit.ly/40t0xxk"
+
+  utter_vis_mis:
+  - text: "Vision : Pune Institute of Computer Technology aspires to be the leader in Higher technical education and research of International repute.
+          \nMission : Pune Institute of Computer Technology (PICT), an elite academic Institute located in Pune (India), which is rightly known as “The Oxford of the East”, playing an inspiring role in the education sector since its establishment in 1983."
+
+  utter_history:
+  - text: "Click on the Following Link: https://pict.edu/history/"
+
+  utter_director:
+  - text: "Click on the Following Link: https://pict.edu/Director-message/"
+
+  utter_principal:
+  - text: "Click on the Following Link : https://pict.edu/principal-message/"
+
+  utter_admin:
+  - text: "Click on the Following Link : https://pict.edu/registrar_office/"
+
+  utter_contact:
+  - text: "Address : Survey No. 27, Near Trimurti Chowk, Dhankawadi, Pune-411043, Maharashtra (India).
+            \nPHONE NUMBER:  +91 20 24371101
+            \nFax: +91 20 24364741
+            \nOffice Hours : Working Days : Monday to Saturday\n
+                            [Except 1st & 3rd Saturday].\n
+                            Working Time : 10:00 am to 5:00 pm."
+    image: "https://goo.gl/maps/24EDX7VLS2ycVeTf7"
+
+  utter_first_year_be:
+  - text: "Click on the Following Link : https://pict.edu/admission-ug/"
+
+  utter_first_year_me:
+  - text: "Click on the Following Link : https://pict.edu/admission-pg/"
+
+  utter_fee_structure:
+  - text: "Click on the Following Link : https://pict.edu/pdf/header/FeesTable%202022-2023NEW.pdf"
+
+  utter_cut_off_fe:
+  - text: "Click on the Following Link : https://pict.edu/cutoff-FE/"
+
+  utter_cut_off_se_direct:
+  - text: "Click on the Following Link : https://pict.edu/cutoff-SE-direct/"
+
+
+  
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

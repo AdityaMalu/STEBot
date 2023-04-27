@@ -1,0 +1,84 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: givelink
+  steps:
+  - intent: give_link
+  - action: utter_link
+
+- story: ce_dept
+  steps:
+  - intent: go_ce_dept
+  - action: utter_ce_dept
+
+- story: it_dept
+  steps:
+  - intent: go_it_dept
+  - action: utter_it_dept
+  
+- story: entc_dept
+  steps:
+  - intent: go_entc_dept
+  - action: utter_entc_dept
+
+- story: academic_calender
+  steps:
+  - intent: go_aca_cal
+  - action: utter_aca_cal
+
+- story: about_us
+  steps:
+  - intent: vision_mission
+  - action: utter_vis_mis
+  - intent: see_history
+  - action: utter_history
+  - intent: director_msg
+  - action: utter_director
+  - intent: principal_msg
+  - action: utter_principal
+  - intent: admin_contact
+  - action: utter_admin
+  - intent: contact_us
+  - action: utter_contact
+
+- story: admissions
+  steps:
+  - intent: first_year_fe_be
+  - action: utter_first_year_be
+  - intent: first_year_be_me
+  - action: utter_first_year_me
+  - intent: fee_structure
+  - action: utter_fee_structure
+  - intent: cut_off_fe
+  - action: utter_cut_off_fe
+  - intent: cut_off_se_direct
+  - action: utter_cut_off_se_direct
+  

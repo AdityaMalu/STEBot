@@ -1,0 +1,225 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: give_link
+  examples: |
+    - Give me site link?
+    - link
+    - site
+    - info
+
+- intent: go_ce_dept
+  examples: |
+    - Info about CE Dept.
+    - CE Dept
+    - CE dpeatment
+    - Information about Computer Department
+    - Computer Department
+    - info ce
+
+- intent: go_it_dept
+  examples: |
+    - Information about IT department
+    - IT
+    - IT department
+    - info IT
+    - Information Technology
+  
+- intent: go_entc_dept
+  examples: |
+    - Entc
+    - entc
+    - ENTC Dept
+    - Entc Department
+    - info entc
+    - Electronics and Telecomunication
+    - Electronics and Telecomunication Department
+
+- intent: go_aca_cal
+  examples: |
+    - academic calender
+    - Academic calender
+    - Calender
+    - calender
+    - dates
+    - holidays
+    - Holidays
+    - Holiday
+    - holiday
+    
+- intent: vision_mission
+  examples: |
+    - Vision
+    - Mission
+
+- intent: see_history
+  examples: |
+    - history
+    - past
+    - How was the institute formed?
+    - formation
+    - year of establishment
+
+- intent: director_msg
+  examples: |
+    - director
+    - director's message
+
+- intent: principal_msg
+  examples: |
+    - principal
+    - princiapl's message
+
+- intent: admin_contact
+  examples: |
+    - administration
+    - important contact
+    - admission contact
+    - admission query
+  
+- intent: contact_us
+  examples: |
+    - address
+    - phone number
+    - contact
+    - time to contact
+    - working hours
+    - email
+    - contact us
+    - mobile number
+    - fax
+- intent: first_year_fe_be
+  examples: |
+    - fe admissions
+    - fe admission
+    - admissions
+    - admission
+    - fe
+    - ug 
+    - undergraduate
+  
+- intent: first_year_be_me
+  examples: |
+    - masters
+    - me
+    - pg
+    - postgrad
+    - postgraduate
+    - higher studies
+
+- intent: fee_structure
+  examples: |
+    - fee
+    - fees
+    - fee struct
+    - fee structure
+      
+- intent: cut_off_fe
+  examples: |
+    - cutoff
+    - cut off
+    - cut-off
+    - fe cutoff
+    - fe cut-off
+
+- intent: cut_off_se_direct
+  examples: |
+    -dse cutoff
+    -dse cut-off 
+    -dse
+    
+
+
+
+
+
+
