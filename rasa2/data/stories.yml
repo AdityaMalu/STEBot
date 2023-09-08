@@ -81,4 +81,49 @@ stories:
   - action: utter_cut_off_fe
   - intent: cut_off_se_direct
   - action: utter_cut_off_se_direct
-  
+
+- story: placement
+  steps:
+  - intent: overview
+  - action: utter_overview
+  - intent: statistics
+  - action: utter_statistics
+  - intent: training_activity
+  - action: utter_training_activity
+  - intent: contact_tnp
+  - action: utter_contact_tnp
+
+- story: alumini
+  steps:
+  - intent: pict_alumini
+  - action: utter_pict_alumini
+
+- story: researches
+  steps:
+  - intent: adv_communication_research
+  - action: utter_adv_communication_research
+  - intent: aiml_research
+  - action: utter_aiml_research
+  - intent: computation_ling
+  - action: utter_computation_ling
+  - intent: cailmd
+  - action: utter_cailmd
+  - intent: cvbdsl
+  - action: utter_cvbdsl
+  - intent: icdmbd
+  - action: utter_icdmbd
+  - intent: mlci
+  - action: utter_mlci
+  - intent: MECHATRONICS
+  - action: utter_MECHATRONICS
+
+- story: iqac
+  steps:
+  - intent: about_iqac
+  - action: utter_about_iqac
+  - intent: about_naac
+  - action: utter_about_naac
+  - intent: about_nba
+  - action: utter_about_nba
+  - intent: about_nirf
+  - action: utter_about_nirf

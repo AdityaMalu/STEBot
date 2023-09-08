@@ -1,0 +1,260 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: happy path 1
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      yes
+    intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - user: |
+      hello
+    intent: greet
+  - action: utter_greet
+  - user: |
+      not good
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      not really
+    intent: deny
+  - action: utter_goodbye
+
+- story: sad path 3
+  steps:
+  - user: |
+      hi
+    intent: greet
+  - action: utter_greet
+  - user: |
+      very terrible
+    intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - user: |
+      no
+    intent: deny
+  - action: utter_goodbye
+
+- story: say goodbye
+  steps:
+  - user: |
+      bye-bye!
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - user: |
+      are you a bot?
+    intent: bot_challenge
+  - action: utter_iamabot
+
+- story: givelink
+  steps:
+  - user: |
+      Give me site link?
+    intent: give_link
+  - action: utter_link
+
+- story: ce_dept
+  steps:
+  - user: |
+      CE depatment information
+    intent: go_ce_dept
+  - action: utter_ce_dept
+
+- story: it_dept
+  steps:
+  - user: |
+      IT department Information
+    intent: go_it_dept
+  - action: utter_it_dept 
+
+- story: entc_dept
+  steps:
+  - user: |
+      ENTC Department Information
+    intent: go_entc_dept
+  - action: utter_entc_dept
+
+- story: academic_calender
+  steps:
+  - user: |
+      Academic Calender
+    intent: go_aca_cal
+  - action: utter_aca_cal
+
+- story: about_us
+  steps:
+  - user: |
+      Vision and Mission
+    intent: vision_mission
+  - action: utter_vis_miss
+  - user: |
+      History
+    intent: see_history
+  - action: utter_history
+  - user: |
+      Director's Message
+    intent: director_msg
+  - action: utter_director
+  - user: |
+      Principal's Message
+    intent: principal_msg
+  - action: utter_principal
+  - user: |
+      Admin Contacts
+    intent: admin_contact
+  - action: utter_admin
+  - user: |
+      Contact Information
+    intent: contact_us
+  - action: utter_contact
+
+- story: admissions
+  steps:
+  - user: |
+      Fe_be Admission
+    intent: first_year_fe_be
+  - action: utter_first_year_be
+  - user: |
+      Fe_Me admission
+    intent: first_year_be_me
+  - action: utter_first_year_me
+  - user: |
+      Fee Structure
+    intent: fee_structure
+  - action: utter_fee_structure
+  - user: |
+      Cut Off_FE_Percentile
+    intent: cut_off_fe
+  - action: utter_cut_off_fe
+  - user: |
+      Cut Off SE_Direct
+    intent: cut_off_se_direct
+  - action: utter_cut_off_se_direct
+
+- story: placement
+  steps:
+  - user: |
+      Overview of Placement
+    intent: overview
+  - action: utter_overview
+  - user: |
+      Show statistics
+    intent: statistics
+  - action: utter_statistics
+  - user: |
+      About training activity
+    intent: training_activity
+  - action: utter_training_activity
+  - user: |
+      Contact training and placment cell
+    intent: contact_tnp
+  - action: utter_contact_tnp
+
+- story: alumini
+  steps:
+  - user: |
+      About PICT alumini page
+    intent: utter_pict_alumini
+  - action: utter_pict_alumini
+
+- story: researches
+  steps:
+  - user: |
+      About advanced communication research
+    intent: adv_communication_research
+  - action: utter_adv_communication_research
+  - user: |
+      About AIML research
+    intent: aiml_research
+  - action: utter_aiml_research
+  - user: |
+      About Computational Linguistics
+    intent: computation_ling
+  - action: utter_computation_ling
+  - user: |
+      About CENTRE FOR ANALYTICS WITH INTELLIGENT LEARNING FOR MULTIMEDIA DATA
+    intent: cailmd
+  - action: utter_cailmd
+  - user: |
+      About COGNITIVE COMPUTER VISION, BLOCKCHAIN, DISTRIBUTED SYSTEMS AND SECURITY LAB.
+  - intent: cvbdsl
+  - action: utter_cvbdsl
+  - user: |
+      About INTELLIGENT COMPUTING DATA MINING AND BIG DATA
+  - intent: icdmbd
+  - action: utter_icdmbd
+  - user: |
+      About MACHINE LEARNING AND COMPUTATIONAL INTELLIGENCE
+  - intent: mlci
+  - action: utter_mlci
+  - user: |
+      About MEK-IT-TRONICS (MECHATRONICS DOMAIN GROUP)
+  - intent: MECHATRONICS
+  - action: utter_MECHATRONICSs
+
+- story: iqac
+  steps:
+  - user: |
+      About INTERNAL QUALITY ASSURANCE CELL
+    intent: about_iqac
+  - action: utter_about_iqac
+  - user: |
+      About NAAC
+    intent: about_naac
+  - action: utter_about_naac
+  - user: |
+      About NBA
+    intent: about_nba
+  - action: utter_about_nba
+  - user: |
+      About NIRF
+    intent: about_nirf
+  - user: utter_about_nirf
+    
+
+
+

@@ -213,9 +213,162 @@ nlu:
 
 - intent: cut_off_se_direct
   examples: |
-    -dse cutoff
-    -dse cut-off 
-    -dse
+    - dse cutoff
+    - dse cut-off 
+    - dse
+    - se direct
+    - direct se admission
+    - direct se
+    - direct second year
+
+  
+- intent: overview
+  examples: |
+    - placement
+    - placement overview
+    - placement summary
+    
+
+- intent: statistics
+  examples: |
+    - placement stats
+    - placement statistics
+    - statistics about placement
+    - know about placement
+
+- intent: training_activity
+  examples: |
+    - training activity
+    - workshops
+    - seminars
+    - recruitent process
+    - jobs
+    - recruiters
+    - job profiles
+    - career oppuernities
+    - higher studies support
+    - Phd
+
+- intent: contact_tnp
+  examples: |
+    - contact tnp
+    - contact traiining and placemnt cell
+    - contact placemnet cell
+    - reach out training and placemnt cell
+    - gmails of placement cell
+    - reach out tnp
+
+- intent: pict_alumini
+  examples: |
+    - about alumini
+    - alumini page
+    - alumini information
+    - pict alumini
+    - alumini
+    - pass out students
+    - past students
+
+- intent: adv_communication_research
+  examples: |
+    - telecommunication reseach
+    - advanced communication research
+    -  Wireless Communications
+    - Microwave Engineering and Communications
+    - Signal Processing for Wireless Communications
+    - Software Defined and Cognitive Radio
+    - Remote Sensing and Radar Imaging
+    - Antennas for Modern Wireless Communication
+
+- intent: aiml_research
+  examples: |
+    - Fully Automated Systems
+    - Robotic Assistants
+    - AI chips
+    - Applied Natural Language Processing
+    - quantum computing
+
+- intent: computation_ling
+  examples: |
+    - Information retrieval
+    - Natural Language Processing
+    - Human Computer Interface
+    - Image Processing Computer vision 
+    
+- intent: cailmd
+  examples: |
+    - Computer vision
+    - Embedding Intelligence
+    - development of softbots
+    - Business analytics
+    - Banking sector
+    - Social network Analysis
+    - Legal Recommendations
+    - Legal Research Engines
+    - Medical
+    - Data Analytics
+    - Digital Education 
+     
+- intent: cvbdsl
+  examples: |
+    - computer vision
+    - blockchain
+    - system security
+    - multimedia data analysis
+
+- intent: icdmbd
+  examples: |
+    - data analytics
+    - data mining
+    - data computing
+
+- intent: mlci
+  examples: |
+   - ml
+   - machine learning
+   - kernel based learning
+   - ci
+   - comutational intelligence research
+   - deep learning
+
+- intent: MECHATRONICS
+  examples: |
+    - mechanical intrest
+    - mech research
+    - electrical research
+    - Micro-Electro-Mechanical Systems
+    - Mechanical systems
+    - Agriculture Electronics 
+    
+- intent: about_iqac
+  examples: |
+    - about internal quality
+    - quality feedback
+    - goodness of college
+    - how good is college in academics
+    - overall performance
+    - performance of institute
+    
+- intent: about_naac
+  examples: |
+    - naac review
+    - naac ranking
+    - naac review
+    - naac feedback
+  
+- intent: about_nba
+  examples: |
+    - nba review
+    - nba ranking
+    - nba review
+    - nba feedback
+
+- intent: about_nirf
+  examples: |
+    - nirf review
+    - nirf ranking
+    - nirf review
+    - nirf feedback
+
     
 
 

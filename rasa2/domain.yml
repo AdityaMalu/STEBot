@@ -24,12 +24,32 @@ intents:
   - fee_structure
   - cut_off_fe
   - cut_off_se_direct
+  - overview
+  - statistics
+  - training_activity
+  - contact_tnp
+  - pict_alumini
+  - adv_communication_research
+  - aiml_research
+  - computation_ling
+  - cailmd
+  - cvbdsl
+  - icdmbd
+  - mlci
+  - MECHATRONICS
+  - about_iqac
+  - about_naac
+  - about_nba
+  - about_nirf
   
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
 
+  # action_hello_world:
+  # - text: "Here is the link : https://pict.edu/"
+  
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -59,8 +79,7 @@ responses:
   - text: "Click on the Following Link: https://pict.edu/ENTC-dept/"
 
   utter_aca_cal:
-  - text: "Click on the Following Link:"
-    image: "https://bit.ly/40t0xxk"
+  - text: "Click on the Following Link: https://bit.ly/40t0xxk"
 
   utter_vis_mis:
   - text: "Vision : Pune Institute of Computer Technology aspires to be the leader in Higher technical education and research of International repute.
@@ -102,9 +121,98 @@ responses:
   utter_cut_off_se_direct:
   - text: "Click on the Following Link : https://pict.edu/cutoff-SE-direct/"
 
+  utter_overview:
+  - text: "Click on the Following Link : https://pict.edu/placement/index.php#overview"
 
+  utter_statistics:
+  - text: "Click on the Following Link : https://pict.edu/placement/index.php#statistics"
+
+  utter_training_activity:
+  - text: "Click on the Following Link : https://pict.edu/placement/index.php#trainingactivities"
+
+  utter_contact_tnp:
+  - text: "Click on the Following Link : https://pict.edu/placement/index.php#contactus"
+
+  utter_pict_alumini:
+  - text: "Click on the Following Link : https://alumni.pict.edu/"
+
+  utter_adv_communication_research:
+  - text: "Click on the Following Link : https://pict.edu/advanced-communication/index.php"
+
+  utter_aiml_research:
+  - text: "Click on the Following Link : https://pict.edu/Artificial%20Intelligence%20and%20Machine%20Learning%20Group/index.php"
+
+  utter_computation_ling:
+  - text: "Click on the Following Link : https://pict.edu/Computational-Linguistics-Lab/index.php"
+
+  utter_cailmd:
+  - text: "Click on the Following Link : https://pict.edu/CAILMD/index.php"
+
+  utter_cvbdsl:
+  - text: "Click on the Following Link : https://pict.edu/CVBDSL/index.php" 
   
+  utter_icdmbd:
+  - text: "Click on the Following Link : https://pict.edu/Intelligent%20Computing%20Data%20Mining%20and%20Big%20Data/index.php"
 
+  utter_mlci:
+  - text: "Click on the Following Link : https://pict.edu/Machine%20Learning%20and%20Computational%20Intelligence/index.php"
+
+  utter_MECHATRONICS:
+  - text: "Click on the Following Link : https://pict.edu/mek-it-tronics/index.php"
+
+  utter_about_iqac:
+  - text: "Click on the Following Link : https://pict.edu/about-iqac/"
+
+  utter_about_naac:
+  - text: "Click on the Following Link : https://pict.edu/naac/"
+
+  utter_about_nba:
+  - text: "Click on the Following Link : https://pict.edu/NBA/"
+
+  utter_about_nirf:
+  - text: "Click on the Following Link : https://pict.edu/nirf/"
+   
+# actions:
+# - action_hello_world
+# - utter_greet
+# - utter_cheer_up
+# - utter_did_that_help
+# - utter_happy
+# - utter_goodbye
+# - utter_iamabot
+# - utter_link
+# - utter_ce_dept
+# - utter_it_dept
+# - utter_entc_dept
+# - utter_aca_cal
+# - utter_vis_mis
+# - utter_history
+# - utter_director
+# - utter_principal
+# - utter_admin
+# - utter_contact
+# - utter_first_year_be
+# - utter_first_year_me
+# - utter_fee_structure
+# - utter_cut_off_fe
+# - utter_cut_off_se_direct
+# - utter_overview
+# - utter_statistics
+# - utter_training_activity
+# - utter_contact_tnp
+# - utter_pict_alumini
+# - utter_adv_communication_research
+# - utter_aiml_research
+# - utter_computation_ling
+# - utter_cailmd
+# - utter_cvbdsl
+# - utter_icdmbd
+# - utter_mlci
+# - utter_MECHATRONICS
+# - utter_about_iqac
+# - utter_about_naac
+# - utter_about_nba
+# - utter_about_nirf
 
 session_config:
   session_expiration_time: 60
